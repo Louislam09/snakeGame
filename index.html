@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SNAKE GAME</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="snake.css">
+    <link rel="shortcut icon" href="snake.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section id="instructionMenu">
+        <h1 class="title">INSTRUCTIONS!</h1>
+        <h2 id="instruction"><span>Use Las Feclas <br> Del Teclado<br> ⬅️⬆️⬇️➡️ <br>para mover <br>la serpiente </span>
+            <br> <br>
+            <h2 id="backButton">⬅️BACK️️️⬅️</h2>
+
+    </section>
+
+    <section id="homeMenu">
+        <h1 class="title">Snake 🐍 and Apple🍎!</h1><br>
+        <h2 id="startButton">START</h2>
+        <h2 id="introButton">INSTRUCTIONS</h2>
+        <h2 id="settingButton">SETTINGS</h2>
+    </section>
+
+    <section id="settingMenu">
+        <h1 class="title">SETTINGS!</h1><br>
+        <div class="mylabel">
+            <input type="checkbox" name="Mode" id="EasyMode">
+            <div class="slidinggroove"></div>
+            <label class="mylabel" for="EasyMode" name="skills">
+                <p class="labelterm">Easy Mode</p>
+            </label>
+        </div><br>
+        <div class="mylabel">
+            <input type="checkbox" name="Mode" id="HardMode">
+            <div class="slidinggroove"></div>
+            <label class="mylabel" for="HardMode" name="skills">
+                <p class="labelterm">Hard Mode</p>
+            </label>
+        </div>
+        <br> <br>
+        <h2 id="backButton2">⬅️BACK️️️⬅️</h2>
+    </section>
+
+    <section id="gameOver">
+        <h1 class="title">GAME OVER!</h1>
+        <h2 id="finalScore"></h2>
+        <h3 id="restartButton">Restart?</h3>
+        <h3 id="goHomeButton">Home</h3>
+    </section>
+
+    <section id="scoreboard">
+        <h2 id="score"></h2>
+    </section>
+    <section id="lifeMenu">
+        <h2 id="life"></h2>
+    </section>
+    <section id="pauseMenu">
+        <h2 id="pause"><i class="fab fa-pause-circle">PAUSE ON!</i></h2>
+        <h2 id="pauseButton">PAUSE OFF<h3>(click)</h3>
+        </h2>
+    </section>
+
+    <!--** section of audio  -->
+    <audio id="backgroundAudio" loop>
+        <source src="audio/backgroundSound.ogg#t=,0.8" type="audio/mp3">
+    </audio>
+    <audio id="homeMenuAudio" loop>
+        <source src="audio/2.ogg" type="audio/mp3">
+    </audio>
+    <audio id="gameoverAudio" loop>
+        <source src="audio/Game Over.ogg" type="audio/mp3">
+    </audio>
+    <audio id="reboundAudio">
+        <source src="audio/rebound.mp3" type="audio/mp3">
+    </audio>
+    <audio id="backgroundSound" loop>
+        <source src="audio/backgroundSound.ogg#t=,13.0" type="audio/mp3">
+    </audio>
+
+
+    <canvas id="game-screen">Tu navegador no soporta canvas</canvas>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="snake.js"></script>
+    <!-- SWEEP ALERT SIRVE PARA CUSTOMIZE LOS ALERTS  -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+</body>
+
+</html>
